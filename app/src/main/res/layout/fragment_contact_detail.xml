@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="16dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_contact"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@color/primary_color"
+            android:scaleType="centerCrop"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_contact_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cv_contact"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_main_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_information"
+        app:layout_constraintStart_toEndOf="@+id/cv_contact"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_contact"
+        android:background="@color/light_gray"
+        android:textStyle="bold"
+        android:paddingVertical="4dp"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            >
+            <TextView
+                android:id="@+id/tv_first_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/first_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_weight="0.3"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_first_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@drawable/rounded_edittext">
+
+            </androidx.appcompat.widget.AppCompatEditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_contact"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            >
+            <TextView
+                android:id="@+id/tv_last_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/last_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_weight="0.3"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_last_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@drawable/rounded_edittext">
+
+            </androidx.appcompat.widget.AppCompatEditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <TextView
+            android:id="@+id/tv_sub_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_information"
+            app:layout_constraintStart_toEndOf="@+id/cv_contact"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/cv_contact"
+            android:background="@color/light_gray"
+            android:textStyle="bold"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            >
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_weight="0.3"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@drawable/rounded_edittext">
+
+            </androidx.appcompat.widget.AppCompatEditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_contact"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            />
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            >
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_weight="0.3"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@drawable/rounded_edittext">
+
+            </androidx.appcompat.widget.AppCompatEditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,7 +1,8 @@
-package com.example.trinwizardapp
+package com.example.trinwizardapp.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.trinwizardapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
